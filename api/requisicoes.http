@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:4000
+
+### Exemplo 1: Requisição GET
+GET {{baseUrl}}/
+Accept: application/json
+
+### Exemplo 2: Requisição POST
+POST {{baseUrl}}/criar-contato
+Content-Type: application/json
+{
+  "nome": "João Silva",
+  "email": "joao@email.com",
+  "assunto": "Aluguel da quadra",
+  "mensagem": "Gostaria de alugar a quadra de futebol para tal dia"
+}
